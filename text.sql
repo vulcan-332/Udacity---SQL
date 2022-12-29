@@ -1,12 +1,12 @@
-Lesson 1: Introduction to SQL
+/*Lesson 1: Introduction to SQL
 Some Quick Vocabulary
-Structured Query Language (SQL) – Structured Query Language is a language that allows us to access information in a database. A typical query might look like this:
+Structured Query Language (SQL) – Structured Query Language is a language that allows us to access information in a database. A typical query might look like this: */
      
        SELECT account_id, standard_qty, gloss_qty 
        FROM orders 
        WHERE (standard_qty = 0 OR gloss_qty = 0) AND occurred_at = ‘2016-1-01’;
 
-NoSQL – NoSQL stands for Not Only SQL. NoSQL databases are a different type of database sometimes used to store web data. An example of a NoSQL database is MongoDB.
+/* NoSQL – NoSQL stands for Not Only SQL. NoSQL databases are a different type of database sometimes used to store web data. An example of a NoSQL database is MongoDB.
 Entity Relationship Diagram (ERD) – A diagrammatic representation of tables and their relationships to one another. Each box shows the name of the table and has two columns below. The first column shows whether a particular field listed to the right is a primary key (PK) or a Foreign Key (FK); the second shows a list of the attributes in the table. Each attribute has a corresponding column in the actual table. The key point here is that the ERD shows us relationships between tables. The “crows feet” arrows show us how the tables connect to one another by connecting primary keys to foreign keys. The three little prongs show that the foreign key can appear in many rows in a table. In other words, the foreign key is not unique in table.
 Primary Key (PK) – Every table has a primary key. The primary key is a unique value for each row. Now two rows can have the same primary key. The primary key is often the first column in a table.
 Foreign Key (FK) – A foreign key is a column in one table that is the primary key in a different table.
@@ -50,7 +50,7 @@ This statement is composed of clauses. Clauses always appear in the same order. 
 
 The LIMIT Clause
 
-The LIMIT clause limits the number of rows returned from a query. For example:
+The LIMIT clause limits the number of rows returned from a query. For example:*/
 
      SELECT *
      FROM orders
